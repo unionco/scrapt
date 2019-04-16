@@ -1,0 +1,36 @@
+{
+    "output": {
+        "action": "csv",
+        "url": "http://dev3.cms.union.co/actions/union/article/save-entry",
+        "path": "./blogs.csv"
+    },
+    "urls": [
+        "https://blog.union.co/all"
+    ],
+    "content": [
+        {
+            "node": ".post-item",
+            "handle": "blog-lising",
+            "children": [
+                {
+                    "node": ".related-title h2",
+                    "title": "Title",
+                    "handle": "title",
+                    "action": "innerText"
+                },
+                {
+                    "node": ".related-title a",
+                    "title": "Link",
+                    "handle": "link",
+                    "action": "href"
+                },
+                {
+                    "node": ".post-category-author",
+                    "title": "Date",
+                    "handle": "date",
+                    "action": "innerText"
+                }
+            ]
+        }
+    ]
+}

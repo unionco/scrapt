@@ -1,0 +1,10 @@
+{
+    "output": {
+        "action": "post",
+        "url": "https://staging.cms.union.co/actions/union/article/save-entry",
+        "path": "./blogs-detail.csv"
+    },
+    "urls": [
+        
+    ]
+}
